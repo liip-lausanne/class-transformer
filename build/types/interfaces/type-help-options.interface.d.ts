@@ -1,5 +1,5 @@
 export interface TypeHelpOptions {
-  newObject: any;
-  object: Record<string, any>;
-  property: string;
+    newObject: any;
+    object: Record<string, any>;
+    property: string;
 }

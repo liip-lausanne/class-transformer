@@ -5,7 +5,4 @@ import { TypeHelpOptions, TypeOptions } from '../interfaces';
  *
  * Can be applied to properties only.
  */
-export declare function Type(
-  typeFunction?: (type?: TypeHelpOptions) => Function,
-  options?: TypeOptions
-): PropertyDecorator;
+export declare function Type(typeFunction?: (type?: TypeHelpOptions) => Function, options?: TypeOptions): PropertyDecorator;

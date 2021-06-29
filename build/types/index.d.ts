@@ -16,24 +16,12 @@ export declare function instanceToPlain<T>(object: T[], options?: ClassTransform
  *
  * @deprecated This function is being removed.
  */
-export declare function classToPlainFromExist<T>(
-  object: T,
-  plainObject: Record<string, any>,
-  options?: ClassTransformOptions
-): Record<string, any>;
-export declare function classToPlainFromExist<T>(
-  object: T,
-  plainObjects: Record<string, any>[],
-  options?: ClassTransformOptions
-): Record<string, any>[];
+export declare function classToPlainFromExist<T>(object: T, plainObject: Record<string, any>, options?: ClassTransformOptions): Record<string, any>;
+export declare function classToPlainFromExist<T>(object: T, plainObjects: Record<string, any>[], options?: ClassTransformOptions): Record<string, any>[];
 /**
  * Converts plain (literal) object to class (constructor) object. Also works with arrays.
  */
-export declare function plainToInstance<T, V>(
-  cls: ClassConstructor<T>,
-  plain: V[],
-  options?: ClassTransformOptions
-): T[];
+export declare function plainToInstance<T, V>(cls: ClassConstructor<T>, plain: V[], options?: ClassTransformOptions): T[];
 export declare function plainToInstance<T, V>(cls: ClassConstructor<T>, plain: V, options?: ClassTransformOptions): T;
 /**
  * Converts plain (literal) object to class (constructor) object.
@@ -86,8 +74,4 @@ export declare function deserialize<T>(cls: ClassConstructor<T>, json: string, o
  * ```
  *
  */
-export declare function deserializeArray<T>(
-  cls: ClassConstructor<T>,
-  json: string,
-  options?: ClassTransformOptions
-): T[];
+export declare function deserializeArray<T>(cls: ClassConstructor<T>, json: string, options?: ClassTransformOptions): T[];
